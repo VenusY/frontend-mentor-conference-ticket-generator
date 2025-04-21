@@ -34,4 +34,30 @@
       outline-offset: 3px;
     }
   }
+
+  &__submit-button {
+    cursor: pointer;
+    width: 100%;
+    padding: 16px;
+    background: var(--orange-700);
+    border: 0;
+    border-radius: 10px;
+    font-size: u.rem(18);
+    font-weight: 900;
+    color: var(--neutral-900);
+    transition-property: box-shadow, transform;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      box-shadow: 0 4px 0 var(--orange-500);
+      transform: translateY(-4px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--neutral-500);
+      outline-offset: 3px;
+      background: var(--orange-500);
+    }
+  }
 }
