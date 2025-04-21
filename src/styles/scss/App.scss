@@ -1,3 +1,5 @@
+@use './util' as u;
+
 @font-face {
   font-family: 'Inconsolata';
   src: url('../../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf')
@@ -16,6 +18,7 @@
 }
 
 body {
+  padding: 32px 16px 114px 16px;
   background-image: url('../../assets/images/pattern-lines.svg'),
     url('../../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg'),
     url('../../assets/images/pattern-squiggly-line-top.svg'),
@@ -25,4 +28,25 @@ body {
   background-size: 260%, 80%, 30%, 30%, 100% 100%;
   background-position: 0% 0%, bottom left, right 25px, 120% center, 0% 0%;
   font-family: 'Inconsolata', sans-serif;
+}
+
+.header {
+  margin-bottom: 40px;
+
+  &__logo {
+    height: 24px;
+    margin-inline: auto;
+  }
+}
+
+.intro {
+  text-align: center;
+
+  &__heading {
+    font-size: u.rem(30);
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: u.rem(-1);
+    line-height: 1.1;
+  }
 }
