@@ -28,7 +28,7 @@ export default function Form() {
           type='file'
           accept='image/*'
           id='avatar-upload'
-          className='form__input-field'
+          className='avatar-upload__input-field'
         />
       </label>
 
@@ -73,6 +73,8 @@ export default function Form() {
         id='github-username'
         className='form__input-field'
       />
+
+      <button className='form__submit-button'>Generate My Ticket</button>
     </form>
   );
 }
