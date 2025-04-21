@@ -80,7 +80,9 @@ export default function Form() {
         />
       </div>
 
-      <button className='form__submit-button'>Generate My Ticket</button>
+      <button type='submit' className='form__submit-button'>
+        Generate My Ticket
+      </button>
     </form>
   );
 }
