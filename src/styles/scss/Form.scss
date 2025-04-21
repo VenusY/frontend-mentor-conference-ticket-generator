@@ -1,0 +1,15 @@
+@use './util' as u;
+
+.form {
+  &__label {
+    display: block;
+    font-size: u.rem(20);
+    letter-spacing: u.rem(-0.5);
+    line-height: 1.2;
+    color: var(--white);
+  }
+
+  &__input-field {
+    display: block;
+  }
+}
