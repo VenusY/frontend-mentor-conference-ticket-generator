@@ -26,7 +26,7 @@ body {
     url('../../assets/images/background-mobile.png');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 260%, 80%, 30%, 30%, 100% 100%;
-  background-position: 0% 0%, bottom left, right 25px, 120% center, 0% 0%;
+  background-position: 0% 0%, bottom left, right 20px, 120% center, 0% 0%;
   font-family: 'Inconsolata', sans-serif;
 }
 
@@ -43,10 +43,18 @@ body {
   text-align: center;
 
   &__heading {
+    margin-bottom: u.rem(18);
     font-size: u.rem(30);
     font-weight: 800;
     color: var(--white);
     letter-spacing: u.rem(-1);
     line-height: 1.1;
+  }
+
+  &__description {
+    font-size: u.rem(20);
+    color: var(--neutral-300);
+    letter-spacing: u.rem(-0.5);
+    line-height: 1.25;
   }
 }
