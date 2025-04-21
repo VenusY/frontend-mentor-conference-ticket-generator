@@ -1,8 +1,13 @@
 @use './util' as u;
 
 .form {
+  &__container {
+    margin-bottom: u.rem(25);
+  }
+
   &__label {
     display: block;
+    margin-bottom: u.rem(10);
     font-size: u.rem(20);
     letter-spacing: u.rem(-0.5);
     line-height: 1.2;
@@ -10,6 +15,23 @@
   }
 
   &__input-field {
+    width: 100%;
+    padding: 16px;
     display: block;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--neutral-500);
+    border-radius: 10px;
+    font-family: var(--ff-inconsolata);
+    font-size: u.rem(18);
+    color: var(--neutral-300);
+
+    &::placeholder {
+      color: var(--neutral-500);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--neutral-500);
+      outline-offset: 3px;
+    }
   }
 }
