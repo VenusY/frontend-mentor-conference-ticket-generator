@@ -1,7 +1,11 @@
+import '../styles/scss/Form.scss';
+
 export default function Form() {
   return (
     <form className='form'>
-      <h2 className='avatar-upload__heading'>Upload Avatar</h2>
+      <label htmlFor='avatar-upload' className='form__label'>
+        Upload Avatar
+      </label>
 
       <label htmlFor='avatar-upload' className='avatar-upload__label'>
         <span className='avatar-upload__image-container'>
