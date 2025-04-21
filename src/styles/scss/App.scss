@@ -16,5 +16,14 @@
 }
 
 body {
+  background-image: url('../../assets/images/pattern-lines.svg'),
+    url('../../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg'),
+    url('../../assets/images/pattern-squiggly-line-top.svg'),
+    url('../../assets/images/pattern-circle.svg'),
+    url('../../assets/images/background-mobile.png');
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 260%, 80%, 30%, 110px, 100% 100%;
+  background-position: 0% 0%, bottom left, right 25px, calc(100% + 50px) center,
+    0% 0%;
   font-family: 'Inconsolata', sans-serif;
 }
