@@ -1,0 +1,60 @@
+@use './util' as u;
+
+.avatar-upload {
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    margin-bottom: u.rem(12);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px dashed var(--neutral-500);
+    border-radius: 10px;
+  }
+
+  &__input-field {
+    display: none;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__icon-container {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: u.rem(18);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--neutral-500);
+    border-radius: 10px;
+  }
+
+  &__icon {
+    width: 30px;
+  }
+
+  &__text {
+    font-size: u.rem(18);
+    line-height: 1.2;
+    text-align: center;
+    color: var(--neutral-300);
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__info-icon {
+    flex-shrink: 0;
+    width: 18px;
+  }
+
+  &__info-text {
+    font-size: u.rem(12);
+    color: var(--neutral-300);
+  }
+}
