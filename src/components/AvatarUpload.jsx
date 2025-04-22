@@ -3,7 +3,7 @@ import '../styles/scss/AvatarUpload.scss';
 export default function AvatarUpload() {
   return (
     <>
-      <label htmlFor='avatar-upload' className='avatar-upload__main-container'>
+      <div className='avatar-upload__main-container'>
         <input
           type='file'
           accept='image/*'
@@ -11,26 +11,37 @@ export default function AvatarUpload() {
           className='avatar-upload__input-field'
         />
 
-        <button type='button' className='avatar-upload__button'>
-          Remove image
-        </button>
-
-        <button type='button' className='avatar-upload__button'>
-          Change image
-        </button>
-
-        <span className='avatar-upload__icon-container'>
+        <label
+          htmlFor='avatar-upload'
+          className='avatar-upload__icon-container'
+        >
           <img
             src={require('../assets/images/icon-upload.svg')}
             alt='Upload'
             className='avatar-upload__icon'
           />
-        </span>
+        </label>
+
+        <div className='avatar-upload__button-container'>
+          <button
+            type='button'
+            className='avatar-upload__button avatar-upload__remove-button'
+          >
+            Remove image
+          </button>
+
+          <label
+            htmlFor='avatar-upload'
+            className='avatar-upload__button avatar-upload__change-button'
+          >
+            Change image
+          </label>
+        </div>
 
         <span className='avatar-upload__text'>
           Drag and drop or click to upload
         </span>
-      </label>
+      </div>
 
       <div className='avatar-upload__info'>
         <img
