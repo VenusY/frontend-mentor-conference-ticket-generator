@@ -27,7 +27,7 @@ body {
     url('../../assets/images/pattern-circle.svg'),
     url('../../assets/images/background-mobile.png');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 260%, 80%, 30%, 30%, 100% 100%;
+  background-size: 260%, auto 210px, 30%, 30%, 100% 100%;
   background-position: 0% 0%, bottom left, right 20px, 120% center, 0% 0%;
   font-family: var(--ff-inconsolata);
 }
