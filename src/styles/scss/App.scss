@@ -32,33 +32,3 @@ body {
   background-position: 0% 0%, bottom left, right 20px, 120% center, 0% 0%;
   font-family: var(--ff-inconsolata);
 }
-
-.header {
-  margin-bottom: 40px;
-
-  &__logo {
-    height: 24px;
-    margin-inline: auto;
-  }
-}
-
-.intro {
-  margin-bottom: u.rem(40);
-  text-align: center;
-
-  &__heading {
-    margin-bottom: u.rem(18);
-    font-size: u.rem(30);
-    font-weight: 800;
-    color: var(--white);
-    letter-spacing: u.rem(-1);
-    line-height: 1.1;
-  }
-
-  &__description {
-    font-size: u.rem(20);
-    color: var(--neutral-300);
-    letter-spacing: u.rem(-0.5);
-    line-height: 1.25;
-  }
-}

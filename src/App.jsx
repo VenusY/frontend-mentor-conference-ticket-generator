@@ -1,29 +1,19 @@
 import './styles/reset.css';
 import './styles/scss/App.scss';
-import Form from './components/Form';
+import { useState } from 'react';
+import TicketPage from './components/TicketPage';
+import FormPage from './components/FormPage';
 
 export default function App() {
-  return (
-    <>
-      <header className='header'>
-        <img
-          src={require('./assets/images/logo-full.svg')}
-          alt='Logo'
-          className='header__logo'
-        />
-      </header>
+  const [displayTicket, setDisplayTicket] = useState(false);
 
-      <section className='intro'>
-        <h1 className='intro__heading'>
-          Your Journey to Coding Conf 2025 Starts Here!
-        </h1>
+  function togglePage() {
+    setDisplayTicket(!displayTicket);
+  }
 
-        <p className='intro__description'>
-          Secure your spot at next year's biggest coding conference.
-        </p>
-      </section>
-
-      <Form />
-    </>
-  );
+  if (displayTicket) {
+    return <TicketPage />;
+  } else {
+    return <FormPage />;
+  }
 }

@@ -1,0 +1,10 @@
+@use './util' as u;
+
+.header {
+  margin-bottom: 40px;
+
+  &__logo {
+    height: 24px;
+    margin-inline: auto;
+  }
+}
