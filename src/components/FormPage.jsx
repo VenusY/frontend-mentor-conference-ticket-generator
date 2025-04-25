@@ -1,4 +1,3 @@
-import '../styles/scss/FormPage.scss';
 import Header from './Header';
 import Form from './Form';
 
