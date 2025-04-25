@@ -14,7 +14,7 @@ export default function TicketPage() {
         </h1>
 
         <p className='intro__description'>
-          We've emailed your tiket to{' '}
+          We've emailed your ticket to{' '}
           <span className='intro__description--highlighted'>
             jonatan@email.com
           </span>{' '}
