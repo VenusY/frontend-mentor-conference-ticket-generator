@@ -15,7 +15,7 @@
   --orange-500: hsl(7, 88%, 67%);
   --orange-700: hsl(7, 71%, 60%);
   --purple: hsl(263, 100%, 50%);
-  --gradient: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  --gradient: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
 
   --ff-inconsolata: 'Inconsolata', monospace;
 }
@@ -51,5 +51,9 @@ body {
     color: var(--neutral-300);
     letter-spacing: u.rem(-0.5);
     line-height: 1.25;
+
+    &--highlighted {
+      color: var(--orange-500);
+    }
   }
 }
