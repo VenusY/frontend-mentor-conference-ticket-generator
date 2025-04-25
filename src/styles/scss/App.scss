@@ -44,6 +44,12 @@ body {
     color: var(--white);
     letter-spacing: u.rem(-1);
     line-height: 1.1;
+
+    &--highlighted {
+      background: var(--gradient);
+      background-clip: text;
+      color: transparent;
+    }
   }
 
   &__description {
