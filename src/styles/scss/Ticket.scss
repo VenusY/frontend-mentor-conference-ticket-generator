@@ -1,9 +1,33 @@
 @use './util' as u;
 
 .ticket {
-  padding: 15px;
-  padding-top: 18px;
+  padding: 4vw;
+  padding-top: 4.8vw;
   background: url('../../assets/images/pattern-ticket.svg');
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.ticket-header {
+  display: flex;
+  gap: 3.4vw;
+
+  &__logo {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  &__heading {
+    margin-bottom: 3vw;
+    font-size: 6.4vw;
+    font-weight: 700;
+    line-height: 0.9;
+    color: var(--white);
+  }
+
+  &__date-location {
+    font-size: 3.7vw;
+    line-height: 1;
+    color: var(--neutral-300);
+  }
 }
