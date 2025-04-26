@@ -1,0 +1,9 @@
+@use './util' as u;
+
+.ticket {
+  padding: 15px;
+  padding-top: 18px;
+  background: url('../../assets/images/pattern-ticket.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
