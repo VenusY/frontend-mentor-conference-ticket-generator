@@ -7,6 +7,17 @@
   background: url('../../assets/images/pattern-ticket.svg');
   background-repeat: no-repeat;
   background-size: 100%;
+
+  &__left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__number {
+    display: none;
+  }
 }
 
 .ticket-header {
@@ -27,6 +38,39 @@
   }
 
   &__date-location {
+    font-size: 3.7vw;
+    line-height: 1;
+    color: var(--neutral-300);
+  }
+}
+
+.ticket-receiver {
+  display: flex;
+  gap: 3.4vw;
+
+  &__avatar {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 5px;
+  }
+
+  &__name {
+    font-size: 4.8vw;
+    color: var(--white);
+  }
+
+  &__github {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+
+  &__github-logo {
+    width: 4.25vw;
+    height: 4.25vw;
+  }
+
+  &__github-username {
     font-size: 3.7vw;
     line-height: 1;
     color: var(--neutral-300);
