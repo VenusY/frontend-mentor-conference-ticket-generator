@@ -9,8 +9,10 @@ export default function TicketPage() {
       <section className='intro'>
         <h1 className='intro__heading'>
           Congrats,{' '}
-          <span className='intro__heading--highlighted'>Jonatan Kristof</span>!
-          Your ticket is ready.
+          <span className='intro__heading--highlighted'>
+            Jonatan <span className='intro__heading--highlighted'>Kristof</span>
+          </span>
+          ! Your ticket is ready.
         </h1>
 
         <p className='intro__description'>
