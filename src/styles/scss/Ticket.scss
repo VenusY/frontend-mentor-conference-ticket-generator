@@ -1,6 +1,7 @@
 @use './util' as u;
 
 .ticket {
+  aspect-ratio: 600 / 280;
   padding: 4vw;
   padding-top: 4.8vw;
   background: url('../../assets/images/pattern-ticket.svg');
