@@ -3,6 +3,7 @@ import { useState } from 'react';
 import AvatarUpload from './AvatarUpload';
 
 export default function Form({
+  switchPage,
   fullName,
   emailAddress,
   githubUsername,
