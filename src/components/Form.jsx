@@ -1,7 +1,14 @@
 import '../styles/scss/Form.scss';
 import AvatarUpload from './AvatarUpload';
 
-export default function Form() {
+export default function Form({
+  fullName,
+  emailAddress,
+  githubUsername,
+  updateFullName,
+  updateEmailAddress,
+  updateGithubUsername,
+}) {
   return (
     <form className='form'>
       <div className='form__container'>

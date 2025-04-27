@@ -6,14 +6,38 @@ import FormPage from './components/FormPage';
 
 export default function App() {
   const [displayTicket, setDisplayTicket] = useState(false);
+  const [fullName, setFullName] = useState('');
+  const [emailAddress, setEmailAddress] = useState('');
+  const [githubUsername, setGithubUsername] = useState('');
 
   function togglePage() {
     setDisplayTicket(!displayTicket);
   }
 
+  function updateFullName(e) {
+    setFullName(e.currentTarget.value);
+  }
+
+  function updateEmailAddress(e) {
+    setEmailAddress(e.currentTarget.value);
+  }
+
+  function updateGithubUsername(e) {
+    setGithubUsername(e.currentTarget.value);
+  }
+
   if (displayTicket) {
     return <TicketPage />;
   } else {
-    return <FormPage />;
+    return (
+      <FormPage
+        fullName={fullName}
+        emailAddress={emailAddress}
+        githubUsername={githubUsername}
+        updateFullName={updateFullName}
+        updateEmailAddress={updateEmailAddress}
+        updateGithubUsername={updateGithubUsername}
+      />
+    );
   }
 }

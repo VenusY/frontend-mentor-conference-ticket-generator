@@ -1,7 +1,14 @@
 import Header from './Header';
 import Form from './Form';
 
-export default function FormPage() {
+export default function FormPage({
+  fullName,
+  emailAddress,
+  githubUsername,
+  updateFullName,
+  updateEmailAddress,
+  updateGithubUsername,
+}) {
   return (
     <section className='form-page'>
       <Header />
@@ -16,7 +23,14 @@ export default function FormPage() {
         </p>
       </section>
 
-      <Form />
+      <Form
+        fullName={fullName}
+        emailAddress={emailAddress}
+        githubUsername={githubUsername}
+        updateFullName={updateFullName}
+        updateEmailAddress={updateEmailAddress}
+        updateGithubUsername={updateGithubUsername}
+      />
     </section>
   );
 }
