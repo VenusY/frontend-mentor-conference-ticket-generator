@@ -23,6 +23,8 @@ export default function Form({
           Full Name
         </label>
         <input
+          value={fullName}
+          onChange={updateFullName}
           type='text'
           autoComplete='name'
           id='full-name'
@@ -35,6 +37,8 @@ export default function Form({
           Email Address
         </label>
         <input
+          value={emailAddress}
+          onChange={updateEmailAddress}
           type='text'
           autoComplete='email'
           placeholder='example@email.com'
@@ -48,6 +52,8 @@ export default function Form({
           GitHub Username
         </label>
         <input
+          value={githubUsername}
+          onChange={updateGithubUsername}
           type='text'
           placeholder='@yourusername'
           id='github-username'
