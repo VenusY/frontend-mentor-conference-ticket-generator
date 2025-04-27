@@ -10,7 +10,7 @@ export default function App() {
   const [emailAddress, setEmailAddress] = useState('');
   const [githubUsername, setGithubUsername] = useState('');
 
-  function togglePage() {
+  function switchPage() {
     setDisplayTicket(!displayTicket);
   }
 
