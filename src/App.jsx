@@ -31,6 +31,7 @@ export default function App() {
   } else {
     return (
       <FormPage
+        switchPage={switchPage}
         fullName={fullName}
         emailAddress={emailAddress}
         githubUsername={githubUsername}

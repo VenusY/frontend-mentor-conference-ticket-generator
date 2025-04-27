@@ -2,6 +2,7 @@ import Header from './Header';
 import Form from './Form';
 
 export default function FormPage({
+  switchPage,
   fullName,
   emailAddress,
   githubUsername,
@@ -24,6 +25,7 @@ export default function FormPage({
       </section>
 
       <Form
+        switchPage={switchPage}
         fullName={fullName}
         emailAddress={emailAddress}
         githubUsername={githubUsername}
