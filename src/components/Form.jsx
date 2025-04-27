@@ -1,4 +1,5 @@
 import '../styles/scss/Form.scss';
+import { useState } from 'react';
 import AvatarUpload from './AvatarUpload';
 
 export default function Form({
@@ -9,6 +10,10 @@ export default function Form({
   updateEmailAddress,
   updateGithubUsername,
 }) {
+  const [validName, setValidName] = useState(true);
+  const [validEmail, setValidEmail] = useState(true);
+  const [validGithub, setValidGithub] = useState(true);
+
   return (
     <form className='form'>
       <div className='form__container'>
