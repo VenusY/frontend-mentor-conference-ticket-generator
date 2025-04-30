@@ -15,8 +15,31 @@ export default function Form({
   const [validEmail, setValidEmail] = useState(true);
   const [validGithub, setValidGithub] = useState(true);
 
+  function validateInputs(e) {
+    e.preventDefault();
+
+    if (!fullName) {
+      console.log('Invalid name.');
+      setValidName(false);
+    }
+
+    if (!emailAddress) {
+      console.log('Invalid email.');
+      setValidEmail(false);
+    }
+
+    if (!githubUsername) {
+      console.log('Invalid username.');
+      setValidGithub(false);
+    }
+
+    if (validName && validEmail && validGithub) {
+      switchPage;
+    }
+  }
+
   return (
-    <form className='form'>
+    <form onSubmit={validateInputs} className='form'>
       <div className='form__container'>
         <label htmlFor='avatar-upload' className='form__label'>
           Upload Avatar
