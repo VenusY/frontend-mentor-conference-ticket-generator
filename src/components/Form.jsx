@@ -19,17 +19,14 @@ export default function Form({
     e.preventDefault();
 
     if (!fullName) {
-      console.log('Invalid name.');
       setValidName(false);
     }
 
     if (!emailAddress) {
-      console.log('Invalid email.');
       setValidEmail(false);
     }
 
     if (!githubUsername) {
-      console.log('Invalid username.');
       setValidGithub(false);
     }
 
