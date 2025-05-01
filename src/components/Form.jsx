@@ -10,6 +10,9 @@ export default function Form({
   updateFullName,
   updateEmailAddress,
   updateGithubUsername,
+  manualUpdateFN,
+  manualUpdateEA,
+  manualUpdateGU,
 }) {
   const [validName, setValidName] = useState(true);
   const [validEmail, setValidEmail] = useState(true);

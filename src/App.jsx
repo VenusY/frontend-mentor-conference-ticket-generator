@@ -26,6 +26,18 @@ export default function App() {
     setGithubUsername(e.currentTarget.value);
   }
 
+  function manualUpdateFN(newValue) {
+    setFullName(newValue);
+  }
+
+  function manualUpdateEA(newValue) {
+    setEmailAddress(newValue);
+  }
+
+  function manualUpdateGU(newValue) {
+    setGithubUsername(newValue);
+  }
+
   if (displayTicket) {
     return <TicketPage />;
   } else {
@@ -38,6 +50,9 @@ export default function App() {
         updateFullName={updateFullName}
         updateEmailAddress={updateEmailAddress}
         updateGithubUsername={updateGithubUsername}
+        manualUpdateFN={manualUpdateFN}
+        manualUpdateEA={manualUpdateEA}
+        manualUpdateGU={manualUpdateGU}
       />
     );
   }
