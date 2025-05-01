@@ -4,11 +4,11 @@ import Form from './Form';
 export default function FormPage({
   switchPage,
   fullName,
-  emailAddress,
-  githubUsername,
+  email,
+  username,
   updateFullName,
-  updateEmailAddress,
-  updateGithubUsername,
+  updateEmail,
+  updateUsername,
   manualUpdateFN,
   manualUpdateEA,
   manualUpdateGU,
@@ -30,11 +30,11 @@ export default function FormPage({
       <Form
         switchPage={switchPage}
         fullName={fullName}
-        emailAddress={emailAddress}
-        githubUsername={githubUsername}
+        email={email}
+        username={username}
         updateFullName={updateFullName}
-        updateEmailAddress={updateEmailAddress}
-        updateGithubUsername={updateGithubUsername}
+        updateEmail={updateEmail}
+        updateUsername={updateUsername}
         manualUpdateFN={manualUpdateFN}
         manualUpdateEA={manualUpdateEA}
         manualUpdateGU={manualUpdateGU}

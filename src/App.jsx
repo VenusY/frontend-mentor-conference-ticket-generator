@@ -7,8 +7,8 @@ import FormPage from './components/FormPage';
 export default function App() {
   const [displayTicket, setDisplayTicket] = useState(false);
   const [fullName, setFullName] = useState('');
-  const [emailAddress, setEmailAddress] = useState('');
-  const [githubUsername, setGithubUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
 
   function switchPage() {
     setDisplayTicket(!displayTicket);
@@ -18,12 +18,12 @@ export default function App() {
     setFullName(e.currentTarget.value);
   }
 
-  function updateEmailAddress(e) {
-    setEmailAddress(e.currentTarget.value);
+  function updateEmail(e) {
+    setEmail(e.currentTarget.value);
   }
 
-  function updateGithubUsername(e) {
-    setGithubUsername(e.currentTarget.value);
+  function updateUsername(e) {
+    setUsername(e.currentTarget.value);
   }
 
   function manualUpdateFN(newValue) {
@@ -31,11 +31,11 @@ export default function App() {
   }
 
   function manualUpdateEA(newValue) {
-    setEmailAddress(newValue);
+    setEmail(newValue);
   }
 
   function manualUpdateGU(newValue) {
-    setGithubUsername(newValue);
+    setUsername(newValue);
   }
 
   if (displayTicket) {
@@ -45,11 +45,11 @@ export default function App() {
       <FormPage
         switchPage={switchPage}
         fullName={fullName}
-        emailAddress={emailAddress}
-        githubUsername={githubUsername}
+        email={email}
+        username={username}
         updateFullName={updateFullName}
-        updateEmailAddress={updateEmailAddress}
-        updateGithubUsername={updateGithubUsername}
+        updateEmail={updateEmail}
+        updateUsername={updateUsername}
         manualUpdateFN={manualUpdateFN}
         manualUpdateEA={manualUpdateEA}
         manualUpdateGU={manualUpdateGU}

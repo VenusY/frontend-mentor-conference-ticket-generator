@@ -5,18 +5,18 @@ import AvatarUpload from './AvatarUpload';
 export default function Form({
   switchPage,
   fullName,
-  emailAddress,
-  githubUsername,
+  email,
+  username,
   updateFullName,
-  updateEmailAddress,
-  updateGithubUsername,
+  updateEmail,
+  updateUsername,
   manualUpdateFN,
   manualUpdateEA,
   manualUpdateGU,
 }) {
   const [validName, setValidName] = useState(true);
   const [validEmail, setValidEmail] = useState(true);
-  const [validGithub, setValidGithub] = useState(true);
+  const [validUsername, setValidUsername] = useState(true);
 
   function validateInputs(e) {
     e.preventDefault();
@@ -25,15 +25,15 @@ export default function Form({
       setValidName(false);
     }
 
-    if (!emailAddress) {
+    if (!email) {
       setValidEmail(false);
     }
 
-    if (!githubUsername) {
-      setValidGithub(false);
+    if (!username) {
+      setValidUsername(false);
     }
 
-    if (validName && validEmail && validGithub) {
+    if (validName && validEmail && validUsername) {
       switchPage;
     }
   }
@@ -66,8 +66,8 @@ export default function Form({
           Email Address
         </label>
         <input
-          value={emailAddress}
-          onChange={updateEmailAddress}
+          value={email}
+          onChange={updateEmail}
           type='text'
           autoComplete='email'
           placeholder='example@email.com'
@@ -81,8 +81,8 @@ export default function Form({
           GitHub Username
         </label>
         <input
-          value={githubUsername}
-          onChange={updateGithubUsername}
+          value={username}
+          onChange={updateUsername}
           type='text'
           placeholder='@yourusername'
           id='github-username'
