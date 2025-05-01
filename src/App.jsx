@@ -26,16 +26,16 @@ export default function App() {
     setUsername(e.currentTarget.value);
   }
 
-  function manualUpdateFullName(newValue) {
-    setFullName(newValue);
+  function manualUpdateFullName(value) {
+    setFullName(value);
   }
 
-  function manualUpdateEmail(newValue) {
-    setEmail(newValue);
+  function manualUpdateEmail(value) {
+    setEmail(value);
   }
 
-  function manualUpdateUsername(newValue) {
-    setUsername(newValue);
+  function manualUpdateUsername(value) {
+    setUsername(value);
   }
 
   if (displayTicket) {
