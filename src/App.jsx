@@ -26,15 +26,15 @@ export default function App() {
     setUsername(e.currentTarget.value);
   }
 
-  function manualUpdateFN(newValue) {
+  function manualUpdateFullName(newValue) {
     setFullName(newValue);
   }
 
-  function manualUpdateEA(newValue) {
+  function manualUpdateEmail(newValue) {
     setEmail(newValue);
   }
 
-  function manualUpdateGU(newValue) {
+  function manualUpdateUsername(newValue) {
     setUsername(newValue);
   }
 
@@ -50,9 +50,9 @@ export default function App() {
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
-        manualUpdateFN={manualUpdateFN}
-        manualUpdateEA={manualUpdateEA}
-        manualUpdateGU={manualUpdateGU}
+        manualUpdateFullName={manualUpdateFullName}
+        manualUpdateEmail={manualUpdateEmail}
+        manualUpdateUsername={manualUpdateUsername}
       />
     );
   }
