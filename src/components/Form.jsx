@@ -71,7 +71,9 @@ export default function Form({
           type='text'
           autoComplete='name'
           id='full-name'
-          className='form__input-field'
+          className={`form__input-field ${
+            validName ? '' : 'form__input-field--invalid'
+          }`}
         />
       </div>
 
@@ -86,7 +88,9 @@ export default function Form({
           autoComplete='email'
           placeholder='example@email.com'
           id='email-address'
-          className='form__input-field'
+          className={`form__input-field ${
+            validEmail ? '' : 'form__input-field--invalid'
+          }`}
         />
       </div>
 
@@ -100,7 +104,9 @@ export default function Form({
           type='text'
           placeholder='@yourusername'
           id='github-username'
-          className='form__input-field'
+          className={`form__input-field ${
+            validUsername ? '' : 'form__input-field--invalid'
+          }`}
         />
       </div>
 
