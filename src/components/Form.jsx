@@ -75,7 +75,11 @@ export default function Form({
             validName ? '' : 'form__input-field--invalid'
           }`}
         />
-        <div className='error-message'>
+        <div
+          className={`error-message ${
+            validName ? '' : 'error-message--visible'
+          }`}
+        >
           <img
             src={require('../assets/images/icon-error.svg')}
             alt='Error'
@@ -100,7 +104,11 @@ export default function Form({
             validEmail ? '' : 'form__input-field--invalid'
           }`}
         />
-        <div className='error-message'>
+        <div
+          className={`error-message ${
+            validEmail ? '' : 'error-message--visible'
+          }`}
+        >
           <img
             src={require('../assets/images/icon-error.svg')}
             alt='Error'
@@ -124,7 +132,11 @@ export default function Form({
             validUsername ? '' : 'form__input-field--invalid'
           }`}
         />
-        <div className='error-message'>
+        <div
+          className={`error-message ${
+            validUsername ? '' : 'error-message--visible'
+          }`}
+        >
           <img
             src={require('../assets/images/icon-error.svg')}
             alt='Error'
