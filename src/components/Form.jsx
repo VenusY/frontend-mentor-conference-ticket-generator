@@ -21,20 +21,40 @@ export default function Form({
   function validateInputs(e) {
     e.preventDefault();
 
-    if (!fullName) {
+    let nameIsValid = false;
+    let emailIsValid = false;
+    let usernameIsValid = false;
+    const fullNameRegex = /^(?:\p{L}+[-'\p{L}]*)(?:\s\p{L}+[-'\p{L}]*)*$/u;
+    const emailRegex =
+      /^[A-Za-z0-9]([A-Za-z0-9.-]*[A-Za-z0-9])?@[A-Za-z]([A-Za-z.-]*[A-Za-z])?\.[A-Za-z]([A-Za-z.]*[A-Za-z])?$/;
+    const usernameRegex = /^[A-Za-z0-9-]+$/;
+
+    if (fullName.match(fullNameRegex)) {
+      nameIsValid = true;
+      setValidName(true);
+    } else {
+      console.log('Invalid name.');
       setValidName(false);
     }
 
-    if (!email) {
+    if (email.match(emailRegex)) {
+      emailIsValid = true;
+      setValidEmail(true);
+    } else {
+      console.log('Invalid email.');
       setValidEmail(false);
     }
 
-    if (!username) {
+    if (username.match(usernameRegex)) {
+      usernameIsValid = true;
+      setValidUsername(true);
+    } else {
+      console.log('Invalid username.');
       setValidUsername(false);
     }
 
-    if (validName && validEmail && validUsername) {
-      switchPage;
+    if (nameIsValid && emailIsValid && usernameIsValid) {
+      switchPage();
     }
   }
 
