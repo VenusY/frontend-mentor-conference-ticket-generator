@@ -1,6 +1,6 @@
 import '../styles/scss/Ticket.scss';
 
-export default function Ticket() {
+export default function Ticket({ fullName, username }) {
   return (
     <div className='ticket'>
       <div className='ticket__left-container'>

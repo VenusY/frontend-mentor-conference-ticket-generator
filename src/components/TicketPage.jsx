@@ -1,7 +1,7 @@
 import Header from './Header';
 import Ticket from './Ticket';
 
-export default function TicketPage() {
+export default function TicketPage({ fullName, email, username }) {
   return (
     <section className='ticket-page'>
       <Header />
@@ -24,7 +24,7 @@ export default function TicketPage() {
         </p>
       </section>
 
-      <Ticket />
+      <Ticket fullName={fullName} username={username} />
     </section>
   );
 }

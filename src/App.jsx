@@ -27,7 +27,7 @@ export default function App() {
   }
 
   if (displayTicket) {
-    return <TicketPage />;
+    return <TicketPage fullName={fullName} email={email} username={username} />;
   } else {
     return (
       <FormPage
