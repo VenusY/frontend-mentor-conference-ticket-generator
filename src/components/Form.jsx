@@ -75,6 +75,14 @@ export default function Form({
             validName ? '' : 'form__input-field--invalid'
           }`}
         />
+        <div className='error-message'>
+          <img
+            src={require('../assets/images/icon-error.svg')}
+            alt='Error'
+            className='error-message__icon'
+          />
+          <p className='error-message__text'>Please enter a valid name.</p>
+        </div>
       </div>
 
       <div className='form__container'>
@@ -92,6 +100,14 @@ export default function Form({
             validEmail ? '' : 'form__input-field--invalid'
           }`}
         />
+        <div className='error-message'>
+          <img
+            src={require('../assets/images/icon-error.svg')}
+            alt='Error'
+            className='error-message__icon'
+          />
+          <p className='error-message__text'>Please enter a valid email.</p>
+        </div>
       </div>
 
       <div className='form__container'>
@@ -108,6 +124,14 @@ export default function Form({
             validUsername ? '' : 'form__input-field--invalid'
           }`}
         />
+        <div className='error-message'>
+          <img
+            src={require('../assets/images/icon-error.svg')}
+            alt='Error'
+            className='error-message__icon'
+          />
+          <p className='error-message__text'>Please enter a valid username.</p>
+        </div>
       </div>
 
       <button type='submit' className='form__submit-button'>
