@@ -67,10 +67,14 @@
 }
 
 .error-message {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: none;
   margin-top: u.rem(12);
+
+  &--visible {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 
   &__icon {
     flex-shrink: 0;
