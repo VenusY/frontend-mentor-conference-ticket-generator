@@ -10,9 +10,6 @@ export default function Form({
   updateFullName,
   updateEmail,
   updateUsername,
-  manualUpdateFullName,
-  manualUpdateEmail,
-  manualUpdateUsername,
 }) {
   const [validName, setValidName] = useState(true);
   const [validEmail, setValidEmail] = useState(true);

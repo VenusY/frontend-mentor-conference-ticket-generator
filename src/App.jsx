@@ -26,18 +26,6 @@ export default function App() {
     setUsername(e.currentTarget.value);
   }
 
-  function manualUpdateFullName(value) {
-    setFullName(value);
-  }
-
-  function manualUpdateEmail(value) {
-    setEmail(value);
-  }
-
-  function manualUpdateUsername(value) {
-    setUsername(value);
-  }
-
   if (displayTicket) {
     return <TicketPage />;
   } else {
@@ -50,9 +38,6 @@ export default function App() {
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
-        manualUpdateFullName={manualUpdateFullName}
-        manualUpdateEmail={manualUpdateEmail}
-        manualUpdateUsername={manualUpdateUsername}
       />
     );
   }

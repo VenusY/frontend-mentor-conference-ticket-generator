@@ -9,9 +9,6 @@ export default function FormPage({
   updateFullName,
   updateEmail,
   updateUsername,
-  manualUpdateFullName,
-  manualUpdateEmail,
-  manualUpdateUsername,
 }) {
   return (
     <section className='form-page'>
@@ -35,9 +32,6 @@ export default function FormPage({
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
-        manualUpdateFullName={manualUpdateFullName}
-        manualUpdateEmail={manualUpdateEmail}
-        manualUpdateUsername={manualUpdateUsername}
       />
     </section>
   );
