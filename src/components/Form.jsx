@@ -27,13 +27,12 @@ export default function Form({
     const fullNameRegex = /^(?:\p{L}+[-'\p{L}]*)(?:\s\p{L}+[-'\p{L}]*)*$/u;
     const emailRegex =
       /^[A-Za-z0-9]([A-Za-z0-9.-]*[A-Za-z0-9])?@[A-Za-z]([A-Za-z.-]*[A-Za-z])?\.[A-Za-z]([A-Za-z.]*[A-Za-z])?$/;
-    const usernameRegex = /^[A-Za-z0-9-]+$/;
+    const usernameRegex = /^@[A-Za-z0-9-]+$/;
 
     if (fullName.match(fullNameRegex)) {
       nameIsValid = true;
       setValidName(true);
     } else {
-      console.log('Invalid name.');
       setValidName(false);
     }
 
@@ -41,7 +40,6 @@ export default function Form({
       emailIsValid = true;
       setValidEmail(true);
     } else {
-      console.log('Invalid email.');
       setValidEmail(false);
     }
 
@@ -49,7 +47,6 @@ export default function Form({
       usernameIsValid = true;
       setValidUsername(true);
     } else {
-      console.log('Invalid username.');
       setValidUsername(false);
     }
 
