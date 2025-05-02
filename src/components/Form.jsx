@@ -142,7 +142,9 @@ export default function Form({
             alt='Error'
             className='error-message__icon'
           />
-          <p className='error-message__text'>Please enter a valid username.</p>
+          <p className='error-message__text'>
+            Please enter a valid username. Must include '@' at the beginning.
+          </p>
         </div>
       </div>
 
