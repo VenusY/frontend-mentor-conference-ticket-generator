@@ -17,10 +17,8 @@ export default function TicketPage({ fullName, email, username }) {
 
         <p className='intro__description'>
           We've emailed your ticket to{' '}
-          <span className='intro__description--highlighted'>
-            jonatan@email.com
-          </span>{' '}
-          and will send updates in the run up to the event.
+          <span className='intro__description--highlighted'>{email}</span> and
+          will send updates in the run up to the event.
         </p>
       </section>
 
