@@ -35,9 +35,7 @@ export default function Ticket({ fullName, username }) {
                 alt='GitHub logo'
                 className='ticket-receiver__github-logo'
               />
-              <p className='ticket-receiver__github-username'>
-                @jonatankristof0101
-              </p>
+              <p className='ticket-receiver__github-username'>{username}</p>
             </div>
           </div>
         </main>
