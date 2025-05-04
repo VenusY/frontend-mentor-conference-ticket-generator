@@ -1,7 +1,10 @@
 import Header from './Header';
+import Name from './Name';
 import Ticket from './Ticket';
 
 export default function TicketPage({ fullName, email, username }) {
+  const nameParts = fullName.split(' ');
+
   return (
     <section className='ticket-page'>
       <Header />
@@ -9,9 +12,17 @@ export default function TicketPage({ fullName, email, username }) {
       <section className='intro'>
         <h1 className='intro__heading'>
           Congrats,{' '}
-          <span className='intro__heading--highlighted'>
-            Jonatan <span className='intro__heading--highlighted'>Kristof</span>
-          </span>
+          {nameParts.map((namePart, index) => {
+            if (index === nameParts.length - 1) {
+              return <Name key={index} namePart={namePart} />;
+            } else {
+              return (
+                <>
+                  <Name key={index} namePart={namePart} />{' '}
+                </>
+              );
+            }
+          })}
           ! Your ticket is ready.
         </h1>
 
