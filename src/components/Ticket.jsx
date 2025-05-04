@@ -27,7 +27,7 @@ export default function Ticket({ fullName, username }) {
           />
 
           <div className='ticket-receiver__text-section'>
-            <p className='ticket-receiver__name'>{fullName}</p>
+            <p className='ticket-receiver__name'>{fullName.toLowerCase()}</p>
 
             <div className='ticket-receiver__github'>
               <img
