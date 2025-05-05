@@ -2,7 +2,7 @@ import Header from './Header';
 import Name from './Name';
 import Ticket from './Ticket';
 
-export default function TicketPage({ fullName, email, username }) {
+export default function TicketPage({ avatar, fullName, email, username }) {
   const nameParts = fullName.split(' ');
 
   return (
@@ -33,7 +33,7 @@ export default function TicketPage({ fullName, email, username }) {
         </p>
       </section>
 
-      <Ticket fullName={fullName} username={username} />
+      <Ticket avatar={avatar} fullName={fullName} username={username} />
     </section>
   );
 }

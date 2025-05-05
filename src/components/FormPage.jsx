@@ -2,10 +2,12 @@ import Header from './Header';
 import Form from './Form';
 
 export default function FormPage({
+  avatar,
   switchPage,
   fullName,
   email,
   username,
+  uploadAvatar,
   updateFullName,
   updateEmail,
   updateUsername,
@@ -25,10 +27,12 @@ export default function FormPage({
       </section>
 
       <Form
+        avatar={avatar}
         switchPage={switchPage}
         fullName={fullName}
         email={email}
         username={username}
+        uploadAvatar={uploadAvatar}
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
