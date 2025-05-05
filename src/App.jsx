@@ -16,7 +16,7 @@ export default function App() {
   }
 
   function uploadAvatar(e) {
-    console.log(e.currentTarget.value);
+    setAvatar(e.currentTarget.value);
   }
 
   function updateFullName(e) {
