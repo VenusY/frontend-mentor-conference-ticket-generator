@@ -4,6 +4,7 @@ import AvatarUpload from './AvatarUpload';
 
 export default function Form({
   switchPage,
+  avatar,
   fullName,
   email,
   username,

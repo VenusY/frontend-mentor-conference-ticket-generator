@@ -27,8 +27,8 @@ export default function FormPage({
       </section>
 
       <Form
-        avatar={avatar}
         switchPage={switchPage}
+        avatar={avatar}
         fullName={fullName}
         email={email}
         username={username}
