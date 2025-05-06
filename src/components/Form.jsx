@@ -8,6 +8,7 @@ export default function Form({
   fullName,
   email,
   username,
+  uploadAvatar,
   updateFullName,
   updateEmail,
   updateUsername,
@@ -59,7 +60,7 @@ export default function Form({
         <label htmlFor='avatar-upload' className='form__label'>
           Upload Avatar
         </label>
-        <AvatarUpload />
+        <AvatarUpload avatar={avatar} uploadAvatar={uploadAvatar} />
       </div>
 
       <div className='form__container'>
