@@ -16,7 +16,9 @@ export default function App() {
   }
 
   function uploadAvatar(e) {
-    setAvatar(e.currentTarget.value);
+    const file = e.currentTarget.files[0];
+    const imageUrl = URL.createObjectURL(file);
+    setAvatar(imageUrl);
   }
 
   function updateFullName(e) {

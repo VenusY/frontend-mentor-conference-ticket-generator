@@ -6,6 +6,7 @@ export default function AvatarUpload({ avatar, uploadAvatar }) {
       <div className='avatar-upload__main-container'>
         <input
           type='file'
+          onChange={uploadAvatar}
           accept='image/*'
           id='avatar-upload'
           className='avatar-upload__input-field'
@@ -16,8 +17,8 @@ export default function AvatarUpload({ avatar, uploadAvatar }) {
           className='avatar-upload__icon-container'
         >
           <img
-            src={require('../assets/images/icon-upload.svg')}
-            alt='Upload'
+            src={avatar || require('../assets/images/icon-upload.svg')}
+            alt='Avatar'
             className='avatar-upload__icon'
           />
         </label>
