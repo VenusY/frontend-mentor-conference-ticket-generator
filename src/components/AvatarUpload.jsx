@@ -23,7 +23,11 @@ export default function AvatarUpload({ avatar, uploadAvatar }) {
           />
         </label>
 
-        <div className='avatar-upload__button-container'>
+        <div
+          className={`avatar-upload__button-container ${
+            avatar ? 'avatar-upload__button-container--visible' : ''
+          }`}
+        >
           <button
             type='button'
             className='avatar-upload__button avatar-upload__remove-button'
