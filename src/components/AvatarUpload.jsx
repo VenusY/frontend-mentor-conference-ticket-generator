@@ -43,7 +43,11 @@ export default function AvatarUpload({ avatar, uploadAvatar }) {
           </label>
         </div>
 
-        <span className='avatar-upload__text'>
+        <span
+          className={`avatar-upload__text ${
+            avatar ? 'avatar-upload__text--hidden' : ''
+          }`}
+        >
           Drag and drop or click to upload
         </span>
       </div>

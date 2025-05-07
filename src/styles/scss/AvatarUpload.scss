@@ -76,6 +76,10 @@
     line-height: 1.4;
     text-align: center;
     color: var(--neutral-300);
+
+    &--hidden {
+      display: none;
+    }
   }
 
   &__info {
