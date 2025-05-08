@@ -1,6 +1,6 @@
 import '../styles/scss/AvatarUpload.scss';
 
-export default function AvatarUpload({ avatar, uploadAvatar }) {
+export default function AvatarUpload({ avatar, uploadAvatar, removeAvatar }) {
   return (
     <>
       <div className='avatar-upload__main-container'>

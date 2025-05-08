@@ -8,6 +8,7 @@ export default function FormPage({
   email,
   username,
   uploadAvatar,
+  removeAvatar,
   updateFullName,
   updateEmail,
   updateUsername,
@@ -33,6 +34,7 @@ export default function FormPage({
         email={email}
         username={username}
         uploadAvatar={uploadAvatar}
+        removeAvatar={removeAvatar}
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}

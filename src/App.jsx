@@ -24,6 +24,10 @@ export default function App() {
     }
   }
 
+  function removeAvatar() {
+    setAvatar('');
+  }
+
   function updateFullName(e) {
     setFullName(e.currentTarget.value);
   }
@@ -54,6 +58,7 @@ export default function App() {
         email={email}
         username={username}
         uploadAvatar={uploadAvatar}
+        removeAvatar={removeAvatar}
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
