@@ -19,7 +19,9 @@ export default function AvatarUpload({ avatar, uploadAvatar }) {
           <img
             src={avatar || require('../assets/images/icon-upload.svg')}
             alt='Avatar'
-            className='avatar-upload__icon'
+            className={`avatar-upload__icon ${
+              avatar ? 'avatar-upload__icon--full-size' : ''
+            }`}
           />
         </label>
 
