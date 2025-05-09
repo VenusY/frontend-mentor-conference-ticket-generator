@@ -39,6 +39,7 @@ export default function AvatarUpload({ avatar, uploadAvatar, removeAvatar }) {
 
           <label
             htmlFor='avatar-upload'
+            onClick={uploadAvatar}
             className='avatar-upload__button avatar-upload__change-button'
           >
             Change image
