@@ -16,7 +16,11 @@ export default function App() {
   }
 
   function uploadAvatar(e) {
-    const file = e.currentTarget.files[0];
+    let file;
+
+    if (e.currentTarget.files) {
+      file = e.currentTarget.files[0];
+    }
 
     if (file) {
       const imageUrl = URL.createObjectURL(file);
