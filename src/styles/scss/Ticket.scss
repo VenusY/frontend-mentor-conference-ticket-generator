@@ -66,6 +66,8 @@
   &__avatar {
     width: 12vw;
     height: 12vw;
+    object-fit: cover;
+    object-position: center;
     border-radius: 5px;
   }
 
