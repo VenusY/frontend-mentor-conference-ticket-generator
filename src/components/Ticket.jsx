@@ -21,7 +21,7 @@ export default function Ticket({ avatar, fullName, username }) {
 
         <main className='ticket-receiver'>
           <img
-            src={require('../assets/images/image-avatar.jpg')}
+            src={avatar || require('../assets/images/icon-person.svg')}
             alt='Avatar'
             className='ticket-receiver__avatar'
           />
