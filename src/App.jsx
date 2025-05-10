@@ -31,6 +31,7 @@ export default function App() {
 
   function removeAvatar() {
     setAvatar('');
+    fileInputField.current.value = '';
   }
 
   function updateFullName(e) {

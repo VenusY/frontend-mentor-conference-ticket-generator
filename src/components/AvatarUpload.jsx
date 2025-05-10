@@ -38,6 +38,7 @@ export default function AvatarUpload({
         >
           <button
             type='button'
+            onClick={removeAvatar}
             className='avatar-upload__button avatar-upload__remove-button'
           >
             Remove image
