@@ -1,6 +1,6 @@
 import './styles/reset.css';
 import './styles/scss/App.scss';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import TicketPage from './components/TicketPage';
 import FormPage from './components/FormPage';
 
@@ -10,6 +10,7 @@ export default function App() {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
+  const fileInputField = useRef();
 
   function switchPage() {
     setDisplayTicket(!displayTicket);
@@ -66,6 +67,7 @@ export default function App() {
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
+        fileInputField={fileInputField}
       />
     );
   }

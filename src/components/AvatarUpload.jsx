@@ -1,6 +1,11 @@
 import '../styles/scss/AvatarUpload.scss';
 
-export default function AvatarUpload({ avatar, uploadAvatar, removeAvatar }) {
+export default function AvatarUpload({
+  avatar,
+  uploadAvatar,
+  removeAvatar,
+  fileInputField,
+}) {
   return (
     <>
       <div className='avatar-upload__main-container'>
@@ -10,6 +15,7 @@ export default function AvatarUpload({ avatar, uploadAvatar, removeAvatar }) {
           accept='image/*'
           id='avatar-upload'
           className='avatar-upload__input-field'
+          ref={fileInputField}
         />
 
         <label

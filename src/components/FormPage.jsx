@@ -12,6 +12,7 @@ export default function FormPage({
   updateFullName,
   updateEmail,
   updateUsername,
+  fileInputField,
 }) {
   return (
     <section className='form-page'>
@@ -38,6 +39,7 @@ export default function FormPage({
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
+        fileInputField={fileInputField}
       />
     </section>
   );

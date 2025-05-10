@@ -13,6 +13,7 @@ export default function Form({
   updateFullName,
   updateEmail,
   updateUsername,
+  fileInputField,
 }) {
   const [validName, setValidName] = useState(true);
   const [validEmail, setValidEmail] = useState(true);
@@ -65,6 +66,7 @@ export default function Form({
           avatar={avatar}
           uploadAvatar={uploadAvatar}
           removeAvatar={removeAvatar}
+          fileInputField={fileInputField}
         />
       </div>
 
