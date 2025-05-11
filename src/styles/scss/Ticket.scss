@@ -41,13 +41,17 @@
   display: flex;
   gap: 3.4vw;
 
+  &__text-section {
+    width: 100%;
+  }
+
   &__logo {
-    width: 8vw;
-    height: 8vw;
+    width: 11.343%;
+    height: 64.05%;
   }
 
   &__heading {
-    margin-bottom: 3vw;
+    margin-bottom: 6.43%;
     font-size: 6.4vw;
     font-weight: 700;
     line-height: 0.9;
