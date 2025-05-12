@@ -34,6 +34,11 @@ body {
   font-family: var(--ff-inconsolata);
 }
 
+.ticket-page {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
 .intro {
   margin-bottom: u.rem(40);
   text-align: center;
