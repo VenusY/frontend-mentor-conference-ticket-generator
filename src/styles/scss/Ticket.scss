@@ -81,6 +81,7 @@
   &__name {
     font-size: 4.8vw;
     text-transform: capitalize;
+    line-height: 1.4;
     color: var(--white);
   }
 
@@ -97,7 +98,7 @@
 
   &__github-username {
     font-size: 3.7vw;
-    line-height: 1;
+    line-height: 1.4;
     color: var(--neutral-300);
   }
 }
