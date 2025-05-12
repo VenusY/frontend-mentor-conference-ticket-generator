@@ -25,13 +25,14 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    font-size: 5.8vw;
   }
 
   &__number {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    font-size: 5.8vw;
     font-weight: 500;
+    letter-spacing: -0.045977em;
     line-height: 1.1;
     color: var(--neutral-500);
   }
