@@ -63,3 +63,13 @@ body {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('../../assets/images/pattern-lines.svg'),
+      url('../../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg'),
+      url('../../assets/images/pattern-squiggly-line-top.svg'),
+      url('../../assets/images/pattern-circle.svg'),
+      url('../../assets/images/background-tablet.png');
+  }
+}
