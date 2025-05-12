@@ -54,13 +54,14 @@
     margin-bottom: 6.43%;
     font-size: 6.4vw;
     font-weight: 700;
-    line-height: 0.9;
+    letter-spacing: -0.0416667em;
+    line-height: 0.8;
     color: var(--white);
   }
 
   &__date-location {
-    font-size: 3.7vw;
-    line-height: 1;
+    font-size: 3.73333vw;
+    line-height: 0.7;
     color: var(--neutral-300);
   }
 }
