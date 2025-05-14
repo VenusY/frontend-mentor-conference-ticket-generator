@@ -19,7 +19,7 @@ export default function FormPage({
       <Header />
 
       <section className='intro'>
-        <h1 className='intro__heading'>
+        <h1 className='intro__heading intro__heading--small-margin'>
           Your Journey to Coding Conf 2025 Starts Here!
         </h1>
 
