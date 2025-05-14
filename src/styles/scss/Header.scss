@@ -8,3 +8,11 @@
     margin-inline: auto;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .header {
+    &__logo {
+      height: 26px;
+    }
+  }
+}
