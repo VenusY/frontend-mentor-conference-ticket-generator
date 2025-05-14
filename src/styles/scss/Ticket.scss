@@ -107,3 +107,9 @@
     color: var(--neutral-300);
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .ticket {
+    margin-top: 110px;
+  }
+}
