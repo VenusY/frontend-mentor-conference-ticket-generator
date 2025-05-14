@@ -23,7 +23,7 @@ export default function FormPage({
           Your Journey to Coding Conf 2025 Starts Here!
         </h1>
 
-        <p className='intro__description'>
+        <p className='intro__description intro__description--wide'>
           Secure your spot at next year's biggest coding conference.
         </p>
       </section>

@@ -108,6 +108,10 @@ body {
     &__description {
       width: 500px;
       font-size: u.rem(24);
+
+      &--wide {
+        width: 670px;
+      }
     }
   }
 }
