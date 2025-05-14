@@ -103,5 +103,10 @@ body {
       width: 800px;
       font-size: u.rem(60);
     }
+
+    &__description {
+      width: 500px;
+      font-size: u.rem(24);
+    }
   }
 }
