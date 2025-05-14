@@ -89,4 +89,14 @@ body {
     background-position: 0% 0%, bottom left, right 20px, 3.6% -84px, 940px 534px,
       0% 0%;
   }
+
+  .ticket-page {
+    max-width: unset;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
