@@ -86,3 +86,24 @@
     color: var(--orange-500);
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .form {
+    width: 460px;
+    margin-inline: auto;
+
+    &__label {
+      font-size: u.rem(20);
+    }
+
+    &__input-field {
+      font-size: u.rem(20);
+    }
+
+    &__submit-button {
+      padding: 17px;
+      font-size: u.rem(20);
+      letter-spacing: u.rem(-0.3);
+    }
+  }
+}
