@@ -3,8 +3,9 @@
 .ticket {
   display: flex;
   aspect-ratio: 600 / 280;
-  padding: 4.3732%;
-  padding-top: 5.25%;
+  max-width: 600px;
+  padding: min(4.3732%, 26px);
+  padding-top: min(5.25%, 32px);
   margin-inline: auto;
   margin-top: 70px;
   background: url('../../assets/images/pattern-ticket.svg');
