@@ -81,9 +81,11 @@ body {
       url('../../assets/images/pattern-squiggly-line-top.svg'),
       url('../../assets/images/pattern-circle.svg'),
       url('../../assets/images/pattern-circle.svg'),
-      url('../../assets/images/background-tablet.png');
-    // TODO: Change the background size and position of background images for desktop
-    background-size: 260%, auto 210px, 30%, 30%, 100% 100%;
-    background-position: 0% 0%, bottom left, right 20px, 120% center, 0% 0%;
+      url('../../assets/images/background-desktop.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
+    background-size: 100%, auto 400px, 450px, 216px, 216px, 100% 100%;
+    background-position: 0% 0%, bottom left, right 20px, 3.6% -84px, 940px 534px,
+      0% 0%;
   }
 }
