@@ -7,7 +7,7 @@ export default function TicketPage({ avatar, fullName, email, username }) {
 
   return (
     <section className='ticket-page'>
-      <Header />
+      <Header modifierClass='header--large-margin' />
 
       <section className='intro'>
         <h1 className='intro__heading'>

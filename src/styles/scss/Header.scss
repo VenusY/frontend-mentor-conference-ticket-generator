@@ -11,7 +11,11 @@
 
 @media screen and (min-width: 1440px) {
   .header {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+
+    &--large-margin {
+      margin-bottom: u.rem(100);
+    }
 
     &__logo {
       height: 30px;

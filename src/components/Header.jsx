@@ -1,8 +1,8 @@
 import '../styles/scss/Header.scss';
 
-export default function Header() {
+export default function Header({ modifierClass }) {
   return (
-    <header className='header'>
+    <header className={`header ${modifierClass}`}>
       <img
         src={require('../assets/images/logo-full.svg')}
         alt='Logo'
