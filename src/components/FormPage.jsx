@@ -16,7 +16,7 @@ export default function FormPage({
 }) {
   return (
     <section className='form-page'>
-      <Header />
+      <Header modifierClass='' />
 
       <section className='intro'>
         <h1 className='intro__heading intro__heading--small-margin'>
