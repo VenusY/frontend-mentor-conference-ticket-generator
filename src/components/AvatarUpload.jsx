@@ -8,7 +8,7 @@ export default function AvatarUpload({
 }) {
   return (
     <>
-      <div className='avatar-upload__main-container'>
+      <label htmlFor='avatar-upload' className='avatar-upload__main-container'>
         <input
           type='file'
           onChange={uploadAvatar}
@@ -60,7 +60,7 @@ export default function AvatarUpload({
         >
           Drag and drop or click to upload
         </span>
-      </div>
+      </label>
 
       <div className='avatar-upload__info'>
         <img
