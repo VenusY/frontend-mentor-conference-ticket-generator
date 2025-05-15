@@ -24,9 +24,14 @@
     font-family: var(--ff-inconsolata);
     font-size: u.rem(18);
     color: var(--neutral-300);
+    transition: background 80ms linear;
 
     &::placeholder {
       color: var(--neutral-500);
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
     }
 
     &:focus-visible {
