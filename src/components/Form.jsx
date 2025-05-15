@@ -28,7 +28,7 @@ export default function Form({
     const fullNameRegex = /^(?:\p{L}+[-'\p{L}]*)(?:\s\p{L}+[-'\p{L}]*)*$/u;
     const emailRegex =
       /^[A-Za-z0-9]([A-Za-z0-9.-]*[A-Za-z0-9])?@[A-Za-z]([A-Za-z.-]*[A-Za-z])?\.[A-Za-z]([A-Za-z.]*[A-Za-z])?$/;
-    const usernameRegex = /^@[A-Za-z0-9-]+$/;
+    const usernameRegex = /^[A-Za-z0-9-]+$/;
 
     if (fullName.match(fullNameRegex)) {
       nameIsValid = true;
@@ -151,9 +151,7 @@ export default function Form({
             alt='Error'
             className='error-message__icon'
           />
-          <p className='error-message__text'>
-            Please enter a valid username. Must include '@' at the beginning.
-          </p>
+          <p className='error-message__text'>Please enter a valid username.</p>
         </div>
       </div>
 
