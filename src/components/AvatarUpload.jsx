@@ -6,14 +6,15 @@ export default function AvatarUpload({
   removeAvatar,
   dropFile,
   handleDragOver,
+  focusInput,
   fileInputField,
 }) {
   return (
     <>
-      <label
+      <div
+        onClick={focusInput}
         onDrop={dropFile}
         onDragOver={handleDragOver}
-        htmlFor='avatar-upload'
         className='avatar-upload__main-container'
       >
         <input
@@ -25,10 +26,7 @@ export default function AvatarUpload({
           ref={fileInputField}
         />
 
-        <label
-          htmlFor='avatar-upload'
-          className='avatar-upload__icon-container'
-        >
+        <div className='avatar-upload__icon-container'>
           <img
             src={avatar || require('../assets/images/icon-upload.svg')}
             alt='Avatar'
@@ -36,7 +34,7 @@ export default function AvatarUpload({
               avatar ? 'avatar-upload__icon--full-size' : ''
             }`}
           />
-        </label>
+        </div>
 
         <div
           className={`avatar-upload__button-container ${
@@ -51,13 +49,13 @@ export default function AvatarUpload({
             Remove image
           </button>
 
-          <label
-            htmlFor='avatar-upload'
-            onClick={uploadAvatar}
+          <button
+            type='button'
+            onClick={focusInput}
             className='avatar-upload__button avatar-upload__change-button'
           >
             Change image
-          </label>
+          </button>
         </div>
 
         <span
@@ -67,7 +65,7 @@ export default function AvatarUpload({
         >
           Drag and drop or click to upload
         </span>
-      </label>
+      </div>
 
       <div className='avatar-upload__info'>
         <img

@@ -29,7 +29,8 @@ export default function App() {
     }
   }
 
-  function removeAvatar() {
+  function removeAvatar(e) {
+    e.stopPropagation();
     setAvatar('');
     fileInputField.current.value = '';
   }
@@ -65,6 +66,11 @@ export default function App() {
     e.preventDefault();
   }
 
+  function focusInput(e) {
+    e.stopPropagation();
+    fileInputField.current.click();
+  }
+
   if (displayTicket) {
     return (
       <TicketPage
@@ -86,6 +92,7 @@ export default function App() {
         removeAvatar={removeAvatar}
         dropFile={dropFile}
         handleDragOver={handleDragOver}
+        focusInput={focusInput}
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}

@@ -11,6 +11,7 @@ export default function FormPage({
   removeAvatar,
   dropFile,
   handleDragOver,
+  focusInput,
   updateFullName,
   updateEmail,
   updateUsername,
@@ -40,6 +41,7 @@ export default function FormPage({
         removeAvatar={removeAvatar}
         dropFile={dropFile}
         handleDragOver={handleDragOver}
+        focusInput={focusInput}
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}

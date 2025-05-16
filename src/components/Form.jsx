@@ -12,6 +12,7 @@ export default function Form({
   removeAvatar,
   dropFile,
   handleDragOver,
+  focusInput,
   updateFullName,
   updateEmail,
   updateUsername,
@@ -70,6 +71,7 @@ export default function Form({
           removeAvatar={removeAvatar}
           dropFile={dropFile}
           handleDragOver={handleDragOver}
+          focusInput={focusInput}
           fileInputField={fileInputField}
         />
       </div>
