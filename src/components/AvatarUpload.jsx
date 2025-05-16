@@ -4,11 +4,18 @@ export default function AvatarUpload({
   avatar,
   uploadAvatar,
   removeAvatar,
+  dropFile,
+  handleDragOver,
   fileInputField,
 }) {
   return (
     <>
-      <label htmlFor='avatar-upload' className='avatar-upload__main-container'>
+      <label
+        onDrop={dropFile}
+        onDragOver={handleDragOver}
+        htmlFor='avatar-upload'
+        className='avatar-upload__main-container'
+      >
         <input
           type='file'
           onChange={uploadAvatar}

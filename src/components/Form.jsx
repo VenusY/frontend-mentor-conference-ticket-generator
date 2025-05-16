@@ -10,6 +10,8 @@ export default function Form({
   username,
   uploadAvatar,
   removeAvatar,
+  dropFile,
+  handleDragOver,
   updateFullName,
   updateEmail,
   updateUsername,
@@ -66,6 +68,8 @@ export default function Form({
           avatar={avatar}
           uploadAvatar={uploadAvatar}
           removeAvatar={removeAvatar}
+          dropFile={dropFile}
+          handleDragOver={handleDragOver}
           fileInputField={fileInputField}
         />
       </div>

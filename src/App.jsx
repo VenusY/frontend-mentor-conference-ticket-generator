@@ -46,6 +46,25 @@ export default function App() {
     setUsername(e.currentTarget.value);
   }
 
+  function dropFile(e) {
+    e.preventDefault();
+
+    let file;
+
+    if (e.dataTransfer.files) {
+      file = e.dataTransfer.files[0];
+    }
+
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setAvatar(imageUrl);
+    }
+  }
+
+  function handleDragOver(e) {
+    e.preventDefault();
+  }
+
   if (displayTicket) {
     return (
       <TicketPage
@@ -65,6 +84,8 @@ export default function App() {
         username={username}
         uploadAvatar={uploadAvatar}
         removeAvatar={removeAvatar}
+        dropFile={dropFile}
+        handleDragOver={handleDragOver}
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
