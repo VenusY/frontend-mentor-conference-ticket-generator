@@ -77,6 +77,17 @@ export default function AvatarUpload({
           Upload your photo {'('}JPG or PNG, max size: 500KB{')'}.
         </p>
       </div>
+
+      <div className='avatar-upload__error'>
+        <img
+          src={require('../assets/images/icon-error.svg')}
+          alt='Error'
+          className='avatar-upload__error-icon'
+        />
+        <p className='avatar-upload__error-message'>
+          File too large. Please upload a photo under 500KB.
+        </p>
+      </div>
     </>
   );
 }
