@@ -16,6 +16,7 @@ export default function Form({
   updateFullName,
   updateEmail,
   updateUsername,
+  displayUploadError,
   fileInputField,
 }) {
   const [validName, setValidName] = useState(true);
@@ -72,6 +73,7 @@ export default function Form({
           dropFile={dropFile}
           handleDragOver={handleDragOver}
           focusInput={focusInput}
+          displayUploadError={displayUploadError}
           fileInputField={fileInputField}
         />
       </div>

@@ -7,6 +7,7 @@ export default function AvatarUpload({
   dropFile,
   handleDragOver,
   focusInput,
+  displayUploadError,
   fileInputField,
 }) {
   return (
@@ -67,7 +68,11 @@ export default function AvatarUpload({
         </span>
       </div>
 
-      <div className='avatar-upload__info'>
+      <div
+        className={`avatar-upload__info ${
+          displayUploadError ? 'avatar-upload__info--hidden' : ''
+        }`}
+      >
         <img
           src={require('../assets/images/icon-info.svg')}
           alt='Information'
@@ -78,7 +83,11 @@ export default function AvatarUpload({
         </p>
       </div>
 
-      <div className='avatar-upload__error'>
+      <div
+        className={`avatar-upload__error ${
+          displayUploadError ? 'avatar-upload__error--visible' : ''
+        }`}
+      >
         <img
           src={require('../assets/images/icon-error.svg')}
           alt='Error'

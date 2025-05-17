@@ -15,6 +15,7 @@ export default function FormPage({
   updateFullName,
   updateEmail,
   updateUsername,
+  displayUploadError,
   fileInputField,
 }) {
   return (
@@ -45,6 +46,7 @@ export default function FormPage({
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
+        displayUploadError={displayUploadError}
         fileInputField={fileInputField}
       />
     </section>

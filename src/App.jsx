@@ -10,6 +10,7 @@ export default function App() {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
+  const [displayUploadError, setDisplayUploadError] = useState(false);
   const fileInputField = useRef();
 
   function switchPage() {
@@ -24,8 +25,13 @@ export default function App() {
     }
 
     if (file) {
-      const imageUrl = URL.createObjectURL(file);
-      setAvatar(imageUrl);
+      if (file.size > 500000) {
+        setDisplayUploadError(true);
+      } else {
+        const imageUrl = URL.createObjectURL(file);
+        setAvatar(imageUrl);
+        setDisplayUploadError(false);
+      }
     }
   }
 
@@ -96,6 +102,7 @@ export default function App() {
         updateFullName={updateFullName}
         updateEmail={updateEmail}
         updateUsername={updateUsername}
+        displayUploadError={displayUploadError}
         fileInputField={fileInputField}
       />
     );
