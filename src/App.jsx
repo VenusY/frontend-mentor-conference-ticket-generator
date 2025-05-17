@@ -65,8 +65,15 @@ export default function App() {
     }
 
     if (file) {
-      const imageUrl = URL.createObjectURL(file);
-      setAvatar(imageUrl);
+      if (file.size > 500000) {
+        fileInputField.current.value = '';
+        setAvatar('');
+        setDisplayUploadError(true);
+      } else {
+        const imageUrl = URL.createObjectURL(file);
+        setAvatar(imageUrl);
+        setDisplayUploadError(false);
+      }
     }
   }
 
