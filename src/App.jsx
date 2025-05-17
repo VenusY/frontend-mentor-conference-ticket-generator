@@ -26,6 +26,8 @@ export default function App() {
 
     if (file) {
       if (file.size > 500000) {
+        fileInputField.current.value = '';
+        setAvatar('');
         setDisplayUploadError(true);
       } else {
         const imageUrl = URL.createObjectURL(file);
